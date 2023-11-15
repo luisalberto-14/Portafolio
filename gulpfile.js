@@ -11,7 +11,7 @@ const concat = require('gulp-concat');
 const terser = require('gulp-terser-js');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');//este se le coloca la version gulp-imagemin@7.0.0 para que no marque error
-const notify = require('gulp-notify');
+//const notify = require('gulp-notify');
 //const cache = require('gulp-cache');
 const webp = require('gulp-webp');
 // const discardComments = require('postcss-discard-comments');
@@ -49,14 +49,14 @@ function imagenes() {
         .pipe(imagemin())
         //.pipe(cache(imagemin({ optimizationLevel: 3})))
         .pipe(dest('build/img'))
-        .pipe(notify({ message: 'Imagen Completada'}));
+        // .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 function versionWebp() { //cambia de version a webp para la web
     return src(paths.imagenes)
         .pipe( webp() )
         .pipe(dest('build/img'))
-        .pipe(notify({ message: 'Imagen Completada'}));
+        // .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 

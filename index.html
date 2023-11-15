@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafolio de evidencias</title>
+	<link rel="stylesheet" href="build/css/app.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+	<link rel="preconectar" href="https://fonts.googleapis.com">
+	<link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="hoja de estilo">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	
+</head>
+<body>
+	<header class="header seccion inicio " id="inicio">
+		<span class="contenido-flecha">
+			<i class="fa-solid fa-arrow-up"></i>
+		</span>
+		<section class="logo">
+				
+			<article class="barra">
+					<!-- ================= adaptable para mobile ===========-->
+				<div class="flex-logo">	
+					<a href="index.html">
+						<img class="img-icono-mobile" class="logo_header" src="build/img/pequeños/logoLuis-removebg-preview.webp" alt="">
+					</a>
+					<picture class="mobile-menu">
+							<img src="build/img/pequeños/menu.svg" alt="imagen no encontrada">
+					</picture>
+					<div class="centrar__menu--mobile">
+						<nav class="navegacion-mobile">
+							<a class="enlace active" style="--i:1;" href="#inicio">Inicio</a>
+							<a class="enlace" style="--i:2;" href="#Sobre-mi">Sobre mí</a>
+							<a class="enlace" style="--i:3;" href="#Servicios">Servicios</a>
+							<a class="enlace" style="--i:4;" href="#Portafolio">Portafolio</a>
+							<a class="enlace" style="--i:5;" href="#Contactame">Contactame</a>
+						</nav>
+						<a href="#" class="cerrar__menu">X</a>
+					</div>
+				</div>
+
+				<a href="index.html">
+				<img class="img-icono" class="logo_header" src="build/img/pequeños/logoLuis-removebg-preview.webp" alt=""></a>
+				<div class="centrar-menu">
+					<div class="derecha">
+						<div class="ico">
+						<i class="fa-solid fa-moon" class="dark-mode" id="dark" ></i>
+						<!-- img src="build/img/pequeños/dark-mode.svg" alt="imagen no encontrada" class="dark-mode" id="dark"> -->
+						</div>
+						
+						<nav class="navegacion">
+						<a class="enlace active" style="--i:1;" href="#inicio">Inicio</a>
+						<a class="enlace" style="--i:2;" href="#Sobre-mi">Sobre mí</a>
+						<a class="enlace" style="--i:3;" href="#Servicios">Servicios</a>
+						<a class="enlace" style="--i:4;" href="#Portafolio">Portafolio</a>
+						<a class="enlace" style="--i:5;" href="#Contactame">Contactame</a>
+						</nav>
+						<div class="seccion-ajuste">
+							<!-- <i class="fas fa-cog fa-spin ajuste" id="ajustes"></i> -->
+							<div class="ajuste" id="ajustes">
+						    	<i class="fa-solid fa-gear"></i>
+						    </div>
+							<div class="contorno">
+								<div class="color1" id="color" data-color-mostrado="rojo"></div>
+								<div class="color2" id="color" data-color-mostrado="azul"></div>
+								<div class="color3" id="color" data-color-mostrado="verde"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<section class="home contenedor">
+				<div class="titulo">
+					<div class="texto-presentacion no-center">
+						<h1 class="no-center">¡Hola!, me llamo <span class="color-texto">Luis Alberto</span></h1>
+					</div>
+					<h2 class="header-titulo no-center">Soy Desarrollador Web</h2>
+					<p class="descripcion_header" >Con Ciertos Conocimientos Basicos 
+						en <span id="typed"></span></p>
+					<div class="botones">
+						<a href="mailto:escuelaluis.1@hotmail.com" class="btn-contratame">Contratame ahora!<i class='bx bx-chevron-right'></i></a>
+					</div>
+					
+				</div>
+				<picture class="home-img">
+					<img src="build/img/grande/persona-perfil1.webp" alt="">
+				</picture>
+			</section>
+		</section>
+	</header>
+
+		<!--========================================= seccion sobre mi =========================================-->
+
+		<main class="main seccion" id="Sobre-mi">
+			<h2>SOBRE MI</h2>
+			<article class="contenedor flex-sobreMi">
+				
+					<picture class="sobremi-img">
+							<img src="build/img/grande/persona-perfil1.webp" alt="mi foto" class="foto-sobremi">
+					</picture>
+
+				<div class="texto__sobremi">
+					<p class="texto-sobre_mi">Hola, Mi nombre es Luis Alberto Lozano Rodriguez.
+							"Soy un desarrollador web junior que fusiona habilidades en JavaScript, CSS y Sass para construir interfaces intuitivas y visualmente atractivas. Mi conocimiento básico en PHP también me permite explorar el desarrollo backend y junto con MYSQL interactuar con la BASE DE DATOS. Busco oportunidades para ampliar mis horizontes y colaborar en proyectos desafiantes que me hagan mostrar el conocimiento que he adquirido con mi esfuerzo."</p>
+
+							<!-- <p>Me fui motivando viendo proyectos que puedes ir realizando por ti mismo y eso fue lo que me ayudo a salir de esa desesperación aunque aún me falta aprender más seguiré practicando resolviendo problemas y usando la lógica.</p> -->
+					<p>Un colega dijo: "Todo lo que imagines lo puedes programar".</p>
+				</div>				
+			</article>
+			<section class="datos" id="sobre-mi">
+				<div class="contenedor recursos">
+					<article class="info">
+						<h3 class="titulo">Información</h3>
+						<div class="info-separacion">
+							<div class="info-dividir">
+								<div class="elemento">
+									<p>Nacimiento: <span>9 de Diciembre de 1993</span></p>
+								</div>
+								<div class="elemento">
+									<p>Edad: <span>29 años</span></p>
+								</div>
+								<div class="elemento">
+									<p>Sitio Web: <span>www.dominio.com</span></p>
+								</div>
+								<div class="elemento">
+									<p>Email: <span class="texto-email"> lozanoalbertoluis0@gmail.com</span></p>
+								</div>
+							</div>
+							<div class="info-dividir">
+								<div class="elemento">
+									<p>Universidad: <span>Terminada</span></p>
+								</div>
+								<div class="elemento">
+									<p>Telefono: <span>5546215125</span></p>
+								</div>
+								<div class="elemento">
+									<p>Ciudad: <span>Estado de Mexico</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="flex-botones_experiencia">
+							<a href="mailto:escuelaluis.1@hotmail.com" class="btn-contratame">Contratame Ahora! <i class='bx bx-chevron-right'></i></a>
+							<!-- <a href="build/archivo/curriculum-sin-experiencia.pdf"  class="btn-contratame" target="_blank" rel="noopenner noreferrer" download="Mi-CV.pdf">Descargue Mi C.V. <i class='bx bxs-download'></i></a> -->
+							<a href="build/archivo/curriculum-sin-experiencia.pdf"  class="btn-contratame" target="_blank" rel="noopenner noreferrer" download="Mi-CV.pdf">Descargue Mi C.V. <i class='bx bxs-download'></i></a>
+						</div>
+						
+					</article>
+					<article class="habilidades" id="habilidades">
+						<h3>Habilidades</h3>
+						<div class="habilidad">
+							<h5>HTML</h5>
+							<div class="progress">
+								<div class="progress-bar" data-width="60"></div>
+							</div>
+							<div class="porcentaje">60%</div>		
+						</div>
+						<div class="habilidad">
+							<h5>CSS</h5>
+							<div class="progress">
+								<div class="progress-bar width-50" data-width="60"></div>
+							</div>
+							<div class="porcentaje">60%</div>		
+						</div>
+						<div class="habilidad">
+							<h5>JAVASCRIPT</h5>
+							<div class="progress">
+								<div class="progress-bar" data-width="50"></div>
+							</div>
+							<div class="porcentaje">50%</div>		
+						</div>
+						<div class="habilidad">
+							<h5>SASS</h5>
+							<div class="progress">
+								<div class="progress-bar" data-width="60"></div>
+							</div>
+							<div class="porcentaje">60%</div>		
+						</div>
+						<div class="habilidad">
+							<h5>PHP</h5>
+							<div class="progress">
+								<div class="progress-bar" data-width="40"></div>
+							</div>
+							<div class="porcentaje">40%</div>		
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<section class="experiencia">
+			<div class="contenedor grid-sobre-mi">
+				<article class="">
+					<h5>Experiencia</h5>
+					<div class="bg-color-fondo">
+						<div class="fondo-experiencia">
+
+							<div class="circle-dot"></div>
+									<i class="fa-solid fa-calendar"> 2017-2017</i>
+									<p>hice mi servicio en la empresa Jonima.SA de C.V.</p>
+								
+								<div class="circle-dot"></div>
+									<i class="fa-solid fa-calendar"> 2015-2019</i>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque perspiciatis nostrum qui omnis laborum explicabo.</p>
+								<div class="circle-dot"></div>	
+									<i class="fa-solid fa-calendar"> 2015-2019</i>
+								
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque perspiciatis nostrum qui omnis laborum explicabo.</p>
+														
+							</div>
+						</div>
+				</article>
+				<article>
+					<h5>Educación</h5>
+					<div class="bg-color-fondo">
+						<div class="fondo-experiencia">
+							
+								<div class="circle-dot"></div>
+									<i class="fa-solid fa-calendar"> 2015-2019</i>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque perspiciatis nostrum qui omnis laborum explicabo.</p>
+								
+								<div class="circle-dot"></div>
+									<i class="fa-solid fa-calendar"> 2015-2019</i>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque perspiciatis nostrum qui omnis laborum explicabo.</p>
+								<div class="circle-dot"></div>
+									<i class="fa-solid fa-calendar"> 2015-2019</i>
+								
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque perspiciatis nostrum qui omnis laborum explicabo.</p>
+								
+							</div>
+						</div>
+				</article>
+			</div>
+		</section>
+
+		<!--===================== SECCION SERVICIOS =========================-->
+
+		<section class="seccion-servicios contenedor seccion" id="Servicios">
+			
+				<h1 class="titulo-servicios center">Servicios</h1>
+				<div class="servicios">
+					<article class="servicio-card">
+						<div class="circle"><i class='bx bxl-html5 logo-servicio' ></i><i class='bx bxl-css3 logo-servicio'><i class='bx bxl-sass logo-servicio' ></i></i></div>
+							<section class="informacion-card"> 
+								<div class="info">
+									<h3 class="texto-serv">Desarrollo web Frontend</h3>
+									<p>Utilizando HTML, CSS y Sass para crear diseños atractivos y optimizados. Creación de páginas web personalizadas.</p>
+								</div>
+								<div class="elementos">
+									<i class='bx bxl-html5 logo-servicio' ></i><i class='bx bxl-css3 logo-servicio'></i><i class='bx bxl-sass logo-servicio' ></i>
+								</div>
+								
+							</section>
+					</article>
+
+					<article class="servicio-card">
+						<div class="circle"><i class='bx bxl-javascript logo-javascript' ></i></div>
+							<section class="informacion-card"> 
+								<div class="info">
+									<h3 class="texto-serv">Interacción con JavaScript</h3>
+									<p>Implementando interactividad y dinamismo en las páginas web utilizando JavaScript para manipular el DOM y consumir APIs.</p>
+								</div>
+								<div class="elementos">
+									<i class='bx bxl-javascript logo-javascript' ></i>
+								</div>
+							</section>
+					</article>	
+
+				</div>
+				<section class="centrar-article">
+					<article class="servicio-card">
+						<div class="circle"><i class='bx bxl-php logo-php' ></i></div>
+							<section class="informacion-card"> 
+								<div class="info">
+									<h3 class="texto-serv">Desarrollo web Backend</h3>
+									<p>Creando aplicaciones web dinámicas utilizando PHP en el lado del servidor para gestionar datos y lógica empresarial.</p>
+								</div>
+								<div class="elementos">
+									<i class='bx bxl-php logo-php logo-servicio' ></i>
+								</div>
+								
+							</section>
+					</article>
+				</section>
+		</section>
+
+		<section class="separador-contenido">
+			<h3>El portafolio se ira actualizando</h3>
+		</section>
+
+
+		<!--============================= Mi portafolio de evidencias =============================-->
+
+		<section class="seccion-portafolio contenedor izquierda seccion" id="Portafolio">
+				<h2 class="titulo "> Portafolio</h2>
+			<div class="card-flip">
+				<article class="card-portafolio">
+					<div class="face front">
+						<img src="build/img/grande/carrito-compras.webp" alt="" class="imagen-portafolio">
+						<h2 class="titulo-Proyecto">Carrito de Compras Sencillo</h2>
+					</div>
+					<div class="face back">
+						<h2 class="titulo-Proyecto">Carrito de Compras Sencillo</h2>
+						<p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+    					
+   						<p>Uno de los desafíos fue gestionar los datos del carrito y mantener su estado utilizando localStorage para preservar la información incluso al recargar la página, garantizando una experiencia de usuario continua y sin pérdidas.</p>
+						<div class="flex-center_direccion">
+							<a href="https://carrito-comprasluis.netlify.app" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
+						</div>
+					</div>
+					
+				</article>
+				<article class="card-portafolio">
+					<div class="face front">
+						<img src="build/img/grande/apiPixabay.webp" alt="" class="imagen-portafolio">
+						<h2 class="titulo-Proyecto">Consumo de Api Pixabay</h2>
+					</div>
+					<div class="face back">
+						<h2 class="titulo-Proyecto">Consumo de Api Pixabay</h2>
+					<p>En este proyecto, se emplearon tecnologías como HTML, CSS y JavaScript para su implementación.</p>
+    				<p>La función principal consiste en buscar imágenes según una palabra clave ingresada por el usuario. Se utilizó JavaScript junto con async/await para realizar llamadas a una API externa y mostrar las imágenes relacionadas con la palabra ingresada, ofreciendo una experiencia dinámica y eficiente para encontrar imágenes deseadas.</p>
+						<div class="flex-center_direccion">
+							<a href="https://carrito-comprasluis.netlify.app" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
+						</div>
+					</div>
+					
+				</article>
+				<article class="card-portafolio">
+					<div class="face front">
+						<img src="build/img/grande/carrito-compras.webp" alt="" class="imagen-portafolio">
+						<h2 class="titulo-Proyecto">Carrito de Compras Sencillo</h2>
+					</div>
+					<div class="face back">
+						<h2 class="titulo-Proyecto">Carrito de Compras Sencillo</h2>
+						<p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+    					
+   						<p>Uno de los desafíos fue gestionar los datos del carrito y mantener su estado utilizando localStorage para preservar la información incluso al recargar la página, garantizando una experiencia de usuario continua y sin pérdidas.</p>
+						<!-- <div class="flex-center_direccion">
+							<a href="https://celadon-api-6eb941.netlify.app/" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
+						</div> -->
+					</div>
+					
+				</article>
+				<article class="card-portafolio">
+					<div class="face front">
+						<img src="build/img/grande/apiPixabay.webp" alt="" class="imagen-portafolio">
+						<h2 class="titulo-Proyecto">Consumo de Api Pixabay</h2>
+					</div>
+					<div class="face back">
+						<h2 class="titulo-Proyecto">Consumo de Api Pixabay</h2>
+						<p>En este proyecto, se emplearon tecnologías como HTML, CSS y JavaScript para su implementación.</p>
+    					<p>La función principal consiste en buscar imágenes según una palabra clave ingresada por el usuario. Se utilizó JavaScript junto con async/await para realizar llamadas a una API externa y mostrar las imágenes relacionadas con la palabra ingresada, ofreciendo una experiencia dinámica y eficiente para encontrar imágenes deseadas.</p>
+						<!-- <div class="flex-center_direccion">
+							<a href="https://carrito-comprasluis.netlify.app" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
+						</div> -->
+					</div>
+					
+				</article>
+		</section>
+
+		<section class="separador-contenido">
+			<h3>Los datos del formulario seran enviados a mi correo</h3>
+		</section>
+
+		<!--========================= formulario dinamico con javascrip =========================-->
+
+		<section class="seccion-contactos contenedor seccion" id="Contactame">
+			<h1 class="titulo-contactos">Contactame</h1>
+			<div class="bg-color" >
+				<form class="form-contactos"  id="formulario" action="">
+					<fieldset>
+						<legend>Para poder contactarme</legend>
+						<p class="nota">* Nota para habilitar el boton debe de llenar el formulario correctamente</p>
+						<div class="campos">
+							<div class="campo1">
+								<label for="nombre">Nombre:</label>
+								<input type="text" name="name" id="nombre" placeholder="Escribe tu nombre">
+							</div>
+							<div class="campo2">
+								<label for="telefono">Telefono:</label>
+								<input type="number" name="telefono" id="telefono" placeholder="Escribe tu numero">
+							</div>
+							<div class="campo3">
+								<label for="email">Email:</label>
+								<input type="email" name="email" id="email" placeholder="Escribe tu email">
+							</div>
+							<div class="campo4">
+								<label for="msg">Mensaje:</label>
+								<textarea name="msg" class="mensaje" id="msg" cols="30" rows="10" placeholder="Escribe un mensaje"></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<div class="flex-center">
+						<button type="submit" class="boton-formulario opacity-50" disabled>Enviame un mensaje</button> 
+					</div>
+					
+					
+				</form>
+				<div class="center">
+					<div class="sk-chase spinner hidden">
+					  <div class="sk-chase-dot"></div>
+					  <div class="sk-chase-dot"></div>
+					  <div class="sk-chase-dot"></div>
+					  <div class="sk-chase-dot"></div>
+					  <div class="sk-chase-dot"></div>
+					  <div class="sk-chase-dot"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--======================================== footer ========================================-->
+		<footer class="footer">
+			<div class="contenedor separo">
+				
+					<article class="barra-footer">
+						
+						<nav class="navegacion">
+							<a class="enlace" href="#inicio">Inicio</a>
+							<a class="enlace" href="#Sobre-mi">Sobre mí</a>
+							<a class="enlace" href="#Servicios">Servicios</a>
+							<a class="enlace" href="#Portafolio">Portafolio</a>
+							<a class="enlace" href="#Contactame">Contactame</a>
+						</nav>
+						<a href="index.html"><img class="img-icono" src="build/img/pequeños/logoLuis-removebg-preview.webp" alt=""></a>
+						
+						
+					</article>
+				<p class="derechos-autor"></p>
+			</div>
+		
+		</footer>
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript"
+ 	 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+  	emailjs.init('qx35S5_HPrq6z4j84')
+	</script>
+
+	<script src="build/js/bundle.min.js"></script>
+</body>
+</html>

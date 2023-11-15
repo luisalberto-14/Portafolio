@@ -1,0 +1,286 @@
+.seccion-ajuste{
+	
+	// padding: 10px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@media(min-width: 480px){
+		flex-direction: row-reverse;
+	}
+	.ajuste{
+		font-size: 3rem;
+		&:hover{
+			cursor: pointer;
+		}	
+		// &.mostrar{
+		// 	top:-2rem;
+		// }
+		@include telefono{
+			margin-left: 1rem;
+			// top:-1rem;
+			height: auto;
+			position:relative;
+		}
+	}
+
+
+	.contorno{
+			display:none;
+			background-color: rgba(252,252,252,0.5);
+			width: 60px;
+			height: 80px;
+			padding-top: .5rem;
+			border-radius:10px;
+			 // position: absolute; /* Agregamos posición absoluta */
+    // 		top: 100%; /* Mostrar debajo del ícono */
+    // 		left: 50%; /* Centrar horizontalmente */
+    // 		transform: translateX(-50%); /* Alinear con el ícono */
+			
+			
+			
+			// color:$blanco;
+			// padding: 10px;
+
+			.color1{
+				
+				margin: 0 auto;
+				background-color: $configuracionMorado;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+			.color2{
+				
+				margin: 0 auto;
+				background-color: $azul;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+			.color3{
+				
+				margin: 0 auto;
+				background-color: $verde;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+
+			.color1:hover, .color2:hover, .color3:hover{
+				cursor: pointer;
+			}
+			
+		}
+}
+
+.contorno.mostrando{
+	display:block;
+
+			@include telefono{
+				//display: none;
+				width: 80px;
+				height: auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				// margin-bottom: 3rem;
+				// margin-top: 1rem;	
+				margin-top: .5rem;
+			}
+}
+
+body.rojo{
+	.main{
+		.sobremi-img::before{
+			border-top:2rem solid $configuracionMorado ;
+			border-left:2rem solid $configuracionMorado;
+		}
+		.sobremi-img::after{
+			border-bottom:2rem solid $configuracionMorado;
+			border-right:2rem solid $configuracionMorado;
+		}
+
+	}
+
+	.fondo{
+		background-color: $configuracionMorado;
+	}
+
+	
+
+
+	// .bg-color{
+	// 	background-color: $configuracionMorado;
+	// 		.form-contactos{
+	// 	background-color: $configuracionMorado;
+
+	// 		.error{
+	// 			background-color: $cafe;
+	// 		}
+	// 	}
+
+	
+	//}
+	.habilidad{
+			.progress{
+				.progress-bar {
+				background-color: $configuracionMorado;
+				
+					}
+			}
+		}
+	.experiencia{
+		.bg-color-fondo{
+			// background-color:$azul;
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $configuracionMorado;
+				}
+
+				.circle-dot{
+					background-color: $configuracionMorado;
+					
+				}
+			}
+		}
+	}
+
+	.card-flip{
+		.face.back{
+			.flex-center_direccion{
+				.boton-proyecto{
+					background-color: $configuracionMorado;
+				}
+			}
+		}
+	}
+
+}
+
+body.azul{
+	.main{
+		.sobremi-img::before{
+			border-top:2rem solid $azul;
+			border-left:2rem solid $azul;
+		}
+		.sobremi-img::after{
+			border-bottom:2rem solid $azul;
+			border-right:2rem solid $azul;
+		}
+
+	}
+
+	.fondo{
+		background-color: $azul;
+	}
+
+	// .bg-color{
+	// 	background-color: $azul;
+	// 		.form-contactos{
+	// 	background-color: $azul;
+	// 		}
+	// 	}
+
+	
+	.habilidad{
+			.progress{
+				.progress-bar {
+				background-color: $azul;
+				
+					}
+			}
+}
+
+.experiencia{
+		.bg-color-fondo{
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $azul;
+				}
+
+				.circle-dot{
+					background-color: $azul;
+					
+				}
+			}
+		}
+	}
+	.card-flip{
+		.face.back{
+			.flex-center_direccion{
+				.boton-proyecto{
+					background-color: $azul;
+				}
+			}
+		}
+	}
+}
+
+body.verde{
+	.main{
+		.sobremi-img::before{
+			border-top:2rem solid $verde;
+			border-left:2rem solid $verde;
+		}
+		.sobremi-img::after{
+			border-bottom:2rem solid $verde;
+			border-right:2rem solid $verde;
+		}
+
+	}
+
+	.fondo{
+		background-color: $verde;
+	}
+
+
+	// .bg-color{
+	// 	background-color: $verde;
+	// 		.form-contactos{
+	// 	background-color: $verde;
+	// 		}
+	// 	}
+
+	
+
+		.habilidad{
+			.progress{
+				.progress-bar {
+				background-color: $verde;
+				
+					}
+			}
+		}
+	.experiencia{
+		.bg-color-fondo{
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $verde;
+				}
+
+				.circle-dot{
+					background-color: $verde;
+					
+				}
+			}
+		}
+	}
+
+	.card-flip{
+		.face.back{
+			.flex-center_direccion{
+				.boton-proyecto{
+					background-color: $verde;
+				}
+			}
+		}
+	}
+	
+	
+}
+

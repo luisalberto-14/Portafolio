@@ -1,0 +1,16 @@
+.divExito{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.exito{
+	background-color: $verdeSuave;
+	padding: 1rem 2rem;
+	color:$verdeExito;
+	font-weight:bold;
+	text-align: center;
+	margin:0;
+	border-radius:10px;
+	border:1px solid $verde;
+	width: 90%;
+}

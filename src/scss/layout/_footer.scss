@@ -1,0 +1,116 @@
+.footer{
+		background-color: $azulFuerte;
+		min-height: 150px;
+		margin-top: 2rem;
+
+		.barra-footer{
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			
+			@include telefono{
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.navegacion{
+
+	display:none;
+	.enlace{
+		position:relative;
+		opacity: 0;
+		animation:irDerecha 2s ease forwards;//el forwards sirve para que la animacion permanezca en la posicion final en este caso el
+		// 100%{
+		// opacity:1; poniendo en opacity en 1 y con esa posicion en 0
+		// transform: translateX(0px);
+	//} 
+		animation-delay: calc(.2s * var(--i)); 
+// 		animation-delay: calc(.2s * var(--i));, el primer elemento comenzará inmediatamente, el segundo comenzará después de 0.2 segundos y el tercer elemento comenzará después de 0.4 segundos.
+
+// En resumen, animation-delay: calc(.2s * var(--i)); se utiliza para crear una secuencia escalonada en las animaciones de varios elementos, 
+		
+	}
+	
+	//background-color: green;
+	.enlace::before{
+		content: "";
+		position:absolute;
+		width: 0%;
+		height: .2rem;
+		bottom:-.3rem;
+		left: 50%;
+		transform:translateX(-50%);
+		// border:1px solid #00acf5;
+		background-color: #00acf5;
+		transition:.2s all;
+	}
+	.enlace:hover::before,
+	.enlace.active::before{
+		width: 100%;
+	}
+
+
+	@include tabletMedio{
+		display:flex;
+		align-items: center;
+
+	}
+	a{
+		color:$blanco;
+		font-size: 2rem;
+		display: block;
+		text-align: center;
+		padding: 1rem;
+		&:hover{
+			background-color: $azulSuave;
+			@include telefono{
+				background-color: transparent;
+			}
+		}
+
+		@include tablet{
+			margin-right: 2rem;
+			border-bottom:none;
+			padding: 0;
+
+			&:last-of-type{ 
+				margin-right: 0;
+			 }
+		}
+	}
+}
+
+
+
+			.img-icono{
+				width: 13rem;
+			}
+		}
+
+		p{
+			color:$blanco;
+			text-align: center;
+			margin: 0;
+			padding-bottom: 1rem;
+		}
+
+		.separo{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			@include telefono{
+				min-height: 150px;
+			}
+		}
+
+
+
+
+}
+
+
+
+
+
+

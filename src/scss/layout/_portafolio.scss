@@ -1,0 +1,127 @@
+.seccion-portafolio{
+	.card-flip{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.card-portafolio{
+			width: 30rem;
+			height: 40rem;
+			position:relative;
+			margin:2rem;
+			border-radius: 1rem;
+
+
+			.face{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				backface-visibility: hidden;
+				border-radius:1rem;
+				transition: .5s ease;
+
+				
+			}
+			.front{
+				transform: perspective(600px) rotateY(0deg);
+				box-shadow:0 .5rem 1rem $negro;
+				border-radius: 2rem !important;
+					img{
+					position:absolute;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					}
+					h2{
+					position: absolute;
+					bottom:0;
+					width: 100%;
+					height: 4rem;
+					background: rgba(0,0,0,.6);
+					font-size: 2rem;
+					letter-spacing: 5;
+					font-weight: bold;
+					margin:0;
+					color:$blanco;
+
+					}
+				}
+			
+			.back{
+				transform:perspective(600px) rotateY(180deg);
+				padding: 1.5rem;
+				box-shadow:0 .5rem 1rem $negro;
+				h2{
+					font-size: 2rem;
+					line-height: 1.5;
+				}
+
+				.flex-center_direccion{
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					.boton-proyecto{
+						padding:1rem 2rem;
+						border-radius:1rem;
+						background:$morado;
+						width: 100%;
+						text-align: center;
+						color:$blanco;
+					}
+				}
+			}
+			&:hover .front{
+				transform: perspective(600px) rotateY(180deg);
+			}
+			&:hover .back{
+				transform: perspective(600px) rotateY(360deg);
+			}
+		}
+		
+
+	}
+	margin-bottom: 2rem;
+
+}
+#Portafolio{ 
+
+	opacity: 0;
+	transform: scale(0.9);
+	transition: .7s ease-in-out all;
+	&.izquierda{
+		transform:translateX(-30px);
+	}
+	&.visible{
+		opacity: 1;
+		transform: scale(1) translate(0PX);
+	}
+ }
+
+ .separador-contenido{
+ 	margin-top: 2rem;
+ 	background-image: url(../img/grande/header.webp);
+ 	width: 100%;
+ 	height: 15rem;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 2.5rem;
+ 	h3{
+ 		color:#00acf5;
+ 		padding: 0 15rem;
+ 		line-height: 1.5;
+ 		text-transform: uppercase;
+ 		letter-spacing: .5rem;
+
+
+ 	}
+ 	@media(max-width: 478px){
+ 		height: auto;
+ 		text-align: left;
+ 		h3{
+ 			font-size: 2.2rem;
+ 			padding: 0 3rem;
+ 		}
+ 	}
+ }
+	

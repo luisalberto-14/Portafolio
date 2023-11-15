@@ -1,0 +1,321 @@
+.no-webp .inicio {
+	background-image:url(../img/grande/header.jpg);
+}
+
+.webp .inicio{
+	background-image:url(../img/grande/header.webp);
+}
+
+.header{
+
+	background-color: $grisFuerte;
+	position:relative;
+	color:$blanco;
+	padding:3.5rem 0 5rem 0; 
+	height: 470px;
+
+	@include telefono{
+		height: 300px;
+	}
+
+
+
+
+	&.inicio{
+	background-image: url("../img/grande/header.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+		@include telefono{ 
+			min-height: 600px;
+		 }
+
+	}
+
+	p{
+		color:$blanco;
+	}
+
+	.img-icono{
+		width:  20rem;
+		margin-top: 0;
+		animation: irDerecha 1s ease;
+		@media(max-width: 768px){
+			display: none;
+		}
+	}
+	.flex-logo{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	.img-icono-mobile{
+		width:15rem;
+	}
+	@include tabletMedio{
+		display:none;
+		.img-icono-mobile{
+			width: 20rem;
+		}
+	}
+}
+}
+
+	
+
+
+.logo{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.titulo{
+		.texto-presentacion{
+			margin-bottom: 0;
+			// display: flex;
+
+			.color-texto{
+				color:#00acf5;
+				text-align: left;
+			}
+		}
+		.header-titulo{
+			margin:0;
+		}
+	}
+	.titulo h1{
+		font-size: 35px;
+		animation:irDerecha 2s ease forwards;
+		@include telefono{
+			&{
+				font-size:$h1;
+			}
+		}
+
+	}
+
+
+
+	p{
+		font-size: 2rem;
+		margin:1rem 0;
+
+		@include telefono{
+			font-size: 2.2rem;
+		}
+	}
+
+	
+
+
+	@include telefono{
+		min-height: 500px;
+	}
+
+	#typed{
+		font-weight: bold;
+		color:#00acf5;
+	}
+	.home{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		@include telefono{
+		flex-direction: row;
+		
+		}
+		.titulo{
+			margin-bottom: 3rem;
+			@include telefono{
+				width: 50%;
+			}
+			.descripcion_header{
+				margin-bottom: 2rem;
+				color:$grisSuave;
+			}
+			.botones{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+					.btn-contratame{
+					padding: 1rem 2rem;
+					background-color: #00acf5;
+					color: #003952;
+					font-weight: bold;
+					text-transform: uppercase;
+					border-radius: 10px;
+					margin-bottom: 2rem;
+					width: 90%;
+					text-align: center;
+					opacity: 0;
+					animation:irIzquierda 2s ease forwards;
+					 @include telefono{
+					 	margin-bottom: 0rem;
+					 	width: auto;
+					 }
+
+
+					&:hover{
+						transition: .5s all;
+						background-color: #003952;
+						color: $blanco;
+					}
+
+				}
+			}
+			
+		}
+		
+	}
+	.home-img{
+		width: 19rem;
+		position: relative;
+		z-index: 1; //se le tiene que colocar para que aparezca el before
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::before{
+			content:"";
+			position: absolute;
+			top:-3rem;
+			width: 140%;
+			height: 100%;
+			background-color: #00acf5;
+			z-index: -1;
+			border-radius: 50%;
+		}
+
+		@include telefono{
+			width: 20rem;
+		}
+		@include tablet{
+			width: 32rem;
+		}
+	}
+}
+
+@keyframes irDerecha{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.barra{
+	padding:0 2.7rem;
+	@include telefono{
+		padding:0 7rem;
+		margin-bottom: 10rem;
+	}
+	
+}
+@keyframes irIzquierda{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+// .barra{
+// 	padding:0 7rem;
+// }
+
+
+@include telefono{
+	.header.abajo{
+		padding: 0;
+			.barra.abajo{
+				position:  fixed;
+				background-color: $gris;
+				opacity: 0.9;
+				width: 100%;
+				height: 70px;
+				padding:1rem 7rem;
+				z-index: 100;
+
+				.fa-moon{
+					display: none;
+				}
+
+				.img-icono{
+					width: 12rem;
+				}
+				.fa-gear{
+					font-size: 1.5rem;
+				}
+				.ajuste{
+					bottom:5px;
+				}
+				.ajuste.mostrar{
+					bottom:-2px;
+				}
+
+				.contorno{
+					background-color: $grisFuerte;
+				}
+				.color1, .color2, .color3{
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+
+			}
+		.navegacion{
+				margin-bottom: 0rem;
+		}
+	}	
+	
+
+}
+
+.contenido-flecha{
+	visibility: hidden;
+}
+
+.contenido-flecha.abajo{
+	visibility: visible;
+
+}
+
+
+.fa-arrow-up{
+	font-size: 1rem;
+	color:white;
+	position:absolute;
+	position:fixed;
+	top:92%;
+	left:92%;
+	padding:1.5rem 1.5rem;
+	margin-left: -1rem;
+	background-color: $gris;
+	border-radius:50%;
+	z-index: 2;
+
+
+	@include telefono{
+		padding:1.5rem 1.5rem;
+		margin-left: 0;
+	}
+
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+		transition: all 3000 ease;
+	}
+}
+
+
+
+
+
+
+
+

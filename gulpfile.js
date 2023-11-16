@@ -68,3 +68,5 @@ function watchArchivos() { //llama a las funciones con su respectivo path
 }
   
 exports.default = parallel(css, javascript,  imagenes, versionWebp, watchArchivos );  //ejecuta por default todas las funciones paralelamente
+
+exports.build=parallel(css, javascript,  imagenes, versionWebp );

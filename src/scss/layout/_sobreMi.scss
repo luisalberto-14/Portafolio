@@ -94,9 +94,10 @@
 						font-weight: $regular;
 					}
 
-					span.texto-email{
+					span.texto-email, span.pagina-web{
 						text-transform: lowercase;
 					}
+
 				}
 
 				&:last-of-type{

@@ -235,8 +235,8 @@
 		padding: 0;
 			.barra.abajo{
 				position:  fixed;
-				background-color: $gris;
-				opacity: 0.9;
+				background-color: rgba(0,0,0,.5);
+				backdrop-filter: blur(5px);
 				width: 100%;
 				height: 70px;
 				padding:1rem 7rem;
@@ -266,10 +266,15 @@
 					width: 1.5rem;
 					height: 1.5rem;
 				}
+				.navegacion{
+					font-size: 1.8rem;
+					font-weight: $bold;
+				}
 
 			}
 		.navegacion{
 				margin-bottom: 0rem;
+				font-size: 18px;
 		}
 	}	
 	
@@ -289,7 +294,7 @@
 .fa-arrow-up{
 	font-size: 1rem;
 	color:white;
-	position:absolute;
+	position:relative;
 	position:fixed;
 	top:92%;
 	left:92%;
@@ -298,8 +303,20 @@
 	background-color: $gris;
 	border-radius:50%;
 	z-index: 2;
+	// animation:pulso 2s linear infinite;
 
-
+	&::after{
+		content:"";
+		position:absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: $gris;
+		z-index: -1;
+		animation:pulso 2s linear infinite;
+	}
 	@include telefono{
 		padding:1.5rem 1.5rem;
 		margin-left: 0;
@@ -309,6 +326,22 @@
 		cursor: pointer;
 		transform: scale(1.1);
 		transition: all 3000 ease;
+	}
+}
+
+@keyframes pulso{
+	0%{
+		opacity: 0;
+		scale:0;
+	}
+
+	50%{
+		opacity: .3;
+		scale:1.4;
+	}
+	100%{
+		opacity: .4;
+		scale:1.5;
 	}
 }
 

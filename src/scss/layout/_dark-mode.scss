@@ -1,3 +1,7 @@
+// #191819 negro de fonodo #212022 de los cuadros o cards
+// #faf9fa no tan blanco de fondo y blanco los cards ffffff
+// nivel media claro y obscuro #161f2c azul que destaca 1ca1f0, naranjado ffab22, tipo rosa rojo df2460, morado 784bc2, amarillo #FFAC1E, otro anaranjado #F45D24,el verde #19bf63
+
 .oscuro{
 	background-color: $grisOscuro;
 	color:$blanco;
@@ -6,7 +10,7 @@
 		color:$blanco;
 	}
 
-	.card-portafolio{
+	.card-portafolio,.servicio-card{
 		background-color: $gris;
 
 	}
@@ -31,6 +35,16 @@
 				font-weight: $bold;
 			}
 		}
+	}
+	.seccion-portafolio{
+		.card{
+		background-color: $grisOscuro;
+		
+		}
+	}
+	
+	.titulo__portafolio{
+		color:$azulNav;
 	}
 }
 

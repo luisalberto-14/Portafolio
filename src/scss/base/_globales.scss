@@ -9,8 +9,9 @@ html{
 }
 
 body{
-	font-family:$fontFamily ;
+	font-family:$fontFamily;
 	font-size: 16px;
+	background-color: $blancoFondo;
 }
 
 .contenedor{
@@ -59,4 +60,11 @@ h1,h2,h3,h4{
 
 .width-60{
 	width: 60%;
+}
+
+.titulo-contactos, .titulo-portafolio, .titulo-servicios, .titulo-sobremi{
+	font-size: 2.8rem;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	font-style:italic;
 }

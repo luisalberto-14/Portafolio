@@ -26,6 +26,7 @@ const navegador=document.querySelector(".navegacion");
 const cerrarMenu=document.querySelector(".cerrar__menu");
 const retirarMenu=document.querySelector(".centrar__menu--mobile");
 const sobreMi=document.querySelector("#Sobre-mi");
+const toggleMoon=document.querySelector(".ico");
 
 function iniciarApp(){
 
@@ -106,15 +107,19 @@ function darckMode(){
 
 		if(document.body.classList.contains('oscuro')){
 			localStorage.setItem("darck-mode","true");
+			darck.setAttribute("class","fa-solid fa-sun");
 		}else{
 			localStorage.setItem("darck-mode","false");
+			darck.setAttribute("class","fa-solid fa-moon");
 		}
 	});
 
 	if(localStorage.getItem("darck-mode")==="true"){
 		document.body.classList.add("oscuro");
+		darck.setAttribute("class","fa-solid fa-sun");
 	}else{
 		document.body.classList.remove("oscuro");
+		darck.setAttribute("class","fa-solid fa-moon");
 	}
 }
 
@@ -379,7 +384,7 @@ function llamandoObservador(entries, observer){
 }
 
 
-
+//animacion de scroll a la seccion sobre mi
 function interceptarDatos(){
 	const observador=new IntersectionObserver(llamandoSobreMi,{
 		root:null,
@@ -399,6 +404,8 @@ function llamandoSobreMi(entries, observer){
 		}
 	})
 }
+
+//animacion a los skills
 
 function interceptarSkills(){
 	const observador=new IntersectionObserver(llamandoObservadorHabilidades,{

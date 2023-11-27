@@ -3,7 +3,7 @@
 	flex-direction: column;
 	color: $blanco;
 
-	@include telefono{
+	@media(width >=882px){
 		flex-direction: row;
 		justify-content: space-between;
 	}
@@ -47,7 +47,7 @@
 	}
 
 
-	@include tabletMedio{
+	@media(width >=882px){
 		display:flex;
 		align-items: center;
 
@@ -68,6 +68,7 @@
 		@include tablet{
 			margin-right: 2rem;
 			border-bottom:none;
+			font-size: 2rem;
 			padding: 0;
 
 			&:last-of-type{ 
@@ -88,14 +89,14 @@
 }
 
 .centrar-menu{
-	display:flex;
-	flex-direction: column;
-	align-items: center;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
 }
 
 .mobile-menu{
 	filter:invert(100%);
-	@include tablet{
+	@media(width >=882px){
 		display:none;
 	}
 
@@ -105,14 +106,14 @@
 		margin:0 auto;
 	}
 
-}
-
-.mostrar{
+	&.mostrar{
 	display:block;
 
 	@include telefono{
 		display:flex;
+		}
 	}
+
 }
 
 .centrar__menu--mobile{

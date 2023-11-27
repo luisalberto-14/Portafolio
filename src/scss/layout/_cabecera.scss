@@ -40,7 +40,7 @@
 		width:  20rem;
 		margin-top: 0;
 		animation: irDerecha 1s ease;
-		@media(max-width: 768px){
+		@media(width <= 882px){
 			display: none;
 		}
 	}
@@ -48,16 +48,16 @@
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	.img-icono-mobile{
-		width:15rem;
-	}
-	@include tabletMedio{
-		display:none;
 		.img-icono-mobile{
-			width: 20rem;
+			width:15rem;
+		}
+		@include tablet{
+			display:none;
+			.img-icono-mobile{
+				width: 20rem;
+			}
 		}
 	}
-}
 }
 
 	
@@ -100,6 +100,10 @@
 		margin:1rem 0;
 
 		@include telefono{
+			font-size: 1.5rem;
+		}
+
+		@include tablet{
 			font-size: 2.2rem;
 		}
 	}
@@ -230,7 +234,7 @@
 // }
 
 
-@include telefono{
+@media(width >=882px){
 	.header.abajo{
 		padding: 0;
 			.barra.abajo{
@@ -244,6 +248,10 @@
 
 				.fa-moon{
 					display: none;
+				}
+
+				.fa-sun{
+					display:none;
 				}
 
 				.img-icono{
@@ -300,7 +308,7 @@
 	left:92%;
 	padding:1.5rem 1.5rem;
 	margin-left: -1rem;
-	background-color: $gris;
+	background-color: $naranja;
 	border-radius:50%;
 	z-index: 2;
 	// animation:pulso 2s linear infinite;
@@ -313,7 +321,7 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
-		background-color: $gris;
+		background-color: $naranja;
 		z-index: -1;
 		animation:pulso 2s linear infinite;
 	}

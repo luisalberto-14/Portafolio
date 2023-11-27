@@ -1,261 +1,76 @@
 .servicios{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2rem;
+	display:grid;
+	margin-bottom: 3rem;
 	@include telefono{
-		flex-direction: row;
+
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+		row-gap:2rem;
 	}
+	@include tablet{
+		
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+	}
+
 	.servicio-card{
-		// background-color: red;
-		width: 30rem;
-		height: 40rem;
-		position:relative;
-		border-radius:2rem;
-		transition: .5s;
-		transition-delay: .5s;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		@include tablet{
-			width: 60rem;
-			height: 35rem;
-		}
+		background-color: white;
+		box-shadow:5px 5px 10px rgba(0,153,255,.5);
+		border-radius:8px;
+		margin-bottom: 2rem;
 
-		&:hover{
-			width: 35rem;
-			height: 50rem;
-			transition-delay:0s;
-			@include tablet{
-				width: 600px;
-				height: 35rem;
-
-
-			}
-		}
-
-		.circle{
-			top: 0;
-			left: 0;
-			position: absolute;
-			// background-color: blue;
-			width: 100%;
-			height: 100%;
-			border-radius:2rem;
-			// display: flex;
-			// justify-content: center;
-			overflow: hidden;//para que oculte las puntas y todo lo que salga
-			display: flex;
+		.icono{
+			width: 70px;
+			height: 70px;
+			margin:2rem auto;
+			border-radius:50%;
+			background-color: orange;
+			margin-bottom: 30px;
+			display:flex;
 			justify-content: center;
 			align-items: center;
-			&::before{
-				content: "";
-				top:0;
-				left: 0;
-				position:absolute;
-				width: 100%;
-				height: 100%;
-				background-color: $azul;
-				clip-path: circle(120px at center);
-				transition:.5s;
-			}
-			.logo-servicio{
-				font-size:  7rem;
-				z-index: 2;
-				color:$blanco;
-				transition: .5s;
-				// transition-delay: .5s;
-			}
-			.logo-javascript{
-				font-size:  12rem;
-				z-index: 2;
-				color:$blanco;
-				transition: .5s;
-			}
-			
-		}
-		&:hover .circle::before{
-			clip-path: circle(400px at center);
-		}
-		&:hover .circle .logo-servicio{
-			transform:scale(0);
-			transition-delay: 0s;
-		}&:hover .circle .logo-javascript{
-			transform:scale(0);
-			transition-delay: 0s;
-		}
-		
-		.informacion-card{
-			position:relative;
-			padding: 2rem;
-			opacity: 0;
-			visibility: hidden;
-			transition: .5s;
-			transition-delay: 0s;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			@include tablet{
-				flex-direction: row;
-			}
-			h3,p{
-				color: $blanco;
-				line-height: 1.5;
-			}
 
-			.elementos{
-				font-size: 3rem;
-				color:$azulFondo;
-				display: flex;
+			.circulo{
+				width: 95%;
+				height: 96%;
+				border-radius: 50%;
+				border:3px solid white;
+				display:flex;
 				justify-content: center;
 				align-items: center;
-					@include desktopMedio{
-						font-size: 7rem;
-					}
-				.logo-javascript{
-					font-size: 7rem;
-					@include desktopMedio{
-						font-size: 12rem;
-					}
-				}
+
+			}
+
+			&.color1{
+				background-color:orange;
+			}
+			&.color2{
+				background-color:rgba(0,153,255,1);
+			}
+			&.color3{
+				background-color:green;
+			}
+
 		}
-
-				
-
+		.informacion-card{
+			padding:0 2rem;
+			line-height:1.5;
 		}
-		&:hover .informacion-card{
-			visibility: visible;
-			opacity: 1;
-			transition-delay: .5s;
-		}
-
-
 	}
+
 
 }
 
-.centrar-article{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	@include telefono{
-		flex-direction: row;
-	}
-	.servicio-card{
-		// background-color: red;
-		width: 30rem;
-		height: 40rem;
-		position:relative;
-		border-radius:2rem;
-		transition: .5s;
-		transition-delay: .5s;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		@include tablet{
-			width: 50rem;
-			height: 35rem;
-		}
 
-		&:hover{
-			width: 35rem;
-			height: 50rem;
-			transition-delay:0s;
-			@include tablet{
-				width: 50rem;
-				height: 35rem;
-
-
-			}
-		}
-
-		.circle{
-			top: 0;
-			left: 0;
-			position: absolute;
-			// background-color: blue;
-			width: 100%;
-			height: 100%;
-			border-radius:2rem;
-			// display: flex;
-			// justify-content: center;
-			overflow: hidden;//para que oculte las puntas y todo lo que salga
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			&::before{
-				content: "";
-				top:0;
-				left: 0;
-				position:absolute;
-				width: 100%;
-				height: 100%;
-				background-color: $azul;
-				clip-path: circle(120px at center);
-				transition:.5s;
-			}
-			
-			.logo-php{
-				font-size:  12rem;
-				z-index: 2;
-				color:$blanco;
-				transition: .5s;
-			}
-			
-		}
-		&:hover .circle::before{
-			clip-path: circle(400px at center);
-		}
-		&:hover .circle .logo-php{
-			transform:scale(0);
-			transition-delay: 0s;
-		}
-		
-		.informacion-card{
-			position:relative;
-			padding: 2rem;
-			opacity: 0;
-			visibility: hidden;
-			transition: .5s;
-			transition-delay: 0s;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			@include tablet{
-				flex-direction: row;
-			}
-			h3,p{
-				color: $blanco;
-				line-height: 1.5;
-			}
-
-			.elementos{
-				font-size: 6rem;
-				color:$azulFondo;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				.logo-php{
-					font-size: 13rem
-				}
-		}
-
-				
-
-		}
-		&:hover .informacion-card{
-			visibility: visible;
-			opacity: 1;
-			transition-delay: .5s;
-		}
-
-
-	}
-
+.logo-javascript{
+	font-size: 30px;
+	color:$blanco;
 }
 
+.fa-database{
+	color:white;
+	font-size:30px;
+}
 
 
 

@@ -25,9 +25,9 @@
 					<a href="index.html">
 						<img class="img-icono-mobile" class="logo_header" src="build/img/pequeños/logoLuis-removebg-preview.webp" alt="">
 					</a>
-					<picture class="mobile-menu">
+					<div class="mobile-menu">
 							<img src="build/img/pequeños/menu.svg" alt="imagen no encontrada">
-					</picture>
+					</div>
 					<div class="centrar__menu--mobile">
 						<nav class="navegacion-mobile">
 							<a class="enlace active" style="--i:1;" href="#inicio">Inicio</a>
@@ -76,8 +76,8 @@
 						<h1 class="no-center">¡Hola!, me llamo <span class="color-texto">Luis Alberto</span></h1>
 					</div>
 					<h2 class="header-titulo no-center">Soy Desarrollador Web</h2>
-					<p class="descripcion_header" >Con Ciertos Conocimientos Basicos 
-						en <span id="typed"></span></p>
+					<p class="descripcion_header" >Con Conocimientos en
+						<span id="typed"></span></p>
 					<div class="botones">
 						<a href="mailto:escuelaluis.1@hotmail.com" class="btn-contratame">Contratame ahora!<i class='bx bx-chevron-right'></i></a>
 					</div>
@@ -93,7 +93,7 @@
 		<!--========================================= seccion sobre mi =========================================-->
 
 		<main class="main seccion" id="Sobre-mi">
-			<h2>SOBRE MI</h2>
+			<h2 class="titulo-sobremi">SOBRE MI</h2>
 			<article class="contenedor flex-sobreMi">
 				
 					<picture class="sobremi-img">
@@ -237,12 +237,19 @@
 		<!--===================== SECCION SERVICIOS =========================-->
 
 		<section class="seccion-servicios contenedor seccion" id="Servicios">
+
+	<!-- 	<section class="seccion-servicios contenedor seccion" id="Servicios"> -->
 			
-				<h1 class="titulo-servicios center">Servicios</h1>
-				<div class="servicios">
-					<article class="servicio-card">
-						<div class="circle"><i class='bx bxl-html5 logo-servicio' ></i><i class='bx bxl-css3 logo-servicio'><i class='bx bxl-sass logo-servicio' ></i></i></div>
-							<section class="informacion-card"> 
+				 <h1 class="titulo-servicios center">Servicios</h1>
+
+				 <div class="servicios">
+				 	<article class="servicio-card">
+				 		<div class="icono color1">
+	                        <div class="circulo">
+	                            <i class="fa-solid fa-code"></i>
+	                        </div>
+                    	</div>
+                    	<section class="informacion-card"> 
 								<div class="info">
 									<h3 class="texto-serv">Desarrollo web Frontend</h3>
 									<p>Utilizando HTML, CSS y Sass para crear diseños atractivos y optimizados. Creación de páginas web personalizadas.</p>
@@ -251,12 +258,15 @@
 									<i class='bx bxl-html5 logo-servicio' ></i><i class='bx bxl-css3 logo-servicio'></i><i class='bx bxl-sass logo-servicio' ></i>
 								</div>
 								
-							</section>
-					</article>
-
-					<article class="servicio-card">
-						<div class="circle"><i class='bx bxl-javascript logo-javascript' ></i></div>
-							<section class="informacion-card"> 
+						</section>
+				 	</article>
+				 	<article class="servicio-card">
+				 		<div class="icono color2">
+	                        <div class="circulo">
+	                           <i class='bx bxl-javascript logo-javascript'></i>
+	                        </div>
+                    	</div>
+                    	<section class="informacion-card"> 
 								<div class="info">
 									<h3 class="texto-serv">Interacción con JavaScript</h3>
 									<p>Implementando interactividad y dinamismo en las páginas web utilizando JavaScript para manipular el DOM y consumir APIs.</p>
@@ -264,37 +274,101 @@
 								<div class="elementos">
 									<i class='bx bxl-javascript logo-javascript' ></i>
 								</div>
-							</section>
-					</article>	
-
-				</div>
-				<section class="centrar-article">
-					<article class="servicio-card">
-						<div class="circle"><i class='bx bxl-php logo-php' ></i></div>
-							<section class="informacion-card"> 
+						</section>
+				 	</article>
+				 	<article class="servicio-card tercera-card">
+				 		<div class="icono color3">
+	                        <div class="circulo">
+	                            <i class="fa-solid fa-database"></i>
+	                        </div>
+                    	</div>
+                    	<section class="informacion-card"> 
 								<div class="info">
 									<h3 class="texto-serv">Desarrollo web Backend</h3>
-									<p>Creando aplicaciones web dinámicas utilizando PHP en el lado del servidor para gestionar datos y lógica empresarial.</p>
+									<p>Creando aplicaciones web dinámicas utilizando PHP en el lado del servidor para gestionar base datos y lógica empresarial.</p>
 								</div>
-								<div class="elementos">
-									<i class='bx bxl-php logo-php logo-servicio' ></i>
-								</div>
-								
-							</section>
-					</article>
-				</section>
+						</section>
+				 	</article>
+				 </div>
 		</section>
 
 		<section class="separador-contenido">
-			<h3>El portafolio se ira actualizando</h3>
+			<div class="ordenar__titulo">
+				<h3 class="cuantos__proyectos">2
+					<span class="simbolo__proyectos">+</span>
+				</h3>
+				<p class="texto__proyectos">pequeños proyectos realizados</p>
+			</div>
 		</section>
 
 
 		<!--============================= Mi portafolio de evidencias =============================-->
 
 		<section class="seccion-portafolio contenedor izquierda seccion" id="Portafolio">
-				<h2 class="titulo "> Portafolio</h2>
-			<div class="card-flip">
+				<h2 class="titulo-portafolio">Portafolio</h2>
+			<div class="grid-portafolio">
+				<div class="card">
+				  	<div class="card-img">
+				    	<img src="build/img/grande/carrito-compras.webp" alt="Imagen de ejemplo">
+					</div>
+					<div class="card-content">
+					    <h2 class="titulo__portafolio">Carrito de compras</h2>
+					     <p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+					    <a href="https://carrito-comprasluis.netlify.app" class="boton__portafolio">
+					    	<div class="icono__portafolio">
+	      				 		<i class="fas fa-code"></i> 
+	      					</div>
+			  				<span class="texto-portafolio">Ir al proyecto</span>
+			  			</a>
+				  	</div>
+				</div>
+				<div class="card">
+				  	<div class="card-img">
+				    	<img src="build/img/grande/apiPixabay.webp" alt="Imagen de ejemplo">
+					</div>
+					<div class="card-content">
+					    <h2 class="titulo__portafolio">Consumo de Api Pixabay</h2>
+					     <p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+					    <a href="enlace-del-proyecto" class="boton__portafolio">
+					    	<div class="icono__portafolio">
+	      				 		<i class="fas fa-code"></i> 
+	      					</div>
+			  				<span class="texto-portafolio">Ir al proyecto</span>
+			  			</a>
+				  	</div>
+				</div>
+				<div class="card">
+				  	<div class="card-img">
+				    	<img src="build/img/grande/carrito-compras.webp" alt="Imagen de ejemplo">
+					</div>
+					<div class="card-content">
+					    <h2 class="titulo__portafolio">Carrito de compras</h2>
+					     <p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+					    <a href="enlace-del-proyecto" class="boton__portafolio">
+					    	<div class="icono__portafolio">
+	      				 		<i class="fas fa-code"></i> 
+	      					</div>
+			  				<span class="texto-portafolio">Ir al proyecto</span>
+			  			</a>
+				  	</div>
+				</div>
+				<div class="card">
+				  	<div class="card-img">
+				    	<img src="build/img/grande/apiPixabay.webp" alt="Imagen de ejemplo">
+					</div>
+					<div class="card-content">
+					    <h2 class="titulo__portafolio">Carrito de compras</h2>
+					     <p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
+					    <a href="enlace-del-proyecto" class="boton__portafolio">
+					    	<div class="icono__portafolio">
+	      				 		<i class="fas fa-code"></i> 
+	      					</div>
+			  				<span class="texto-portafolio">Ir al proyecto</span>
+			  			</a>
+				  	</div>
+				</div>
+				
+			<!-- <div class="card-flip">
 				<article class="card-portafolio">
 					<div class="face front">
 						<img src="build/img/grande/carrito-compras.webp" alt="" class="imagen-portafolio">
@@ -335,10 +409,10 @@
 						<h2 class="titulo-Proyecto">Carrito de Compras Sencillo</h2>
 						<p>Este proyecto muestra mi habilidad para crear un carrito de compras dinámico utilizando tecnologías como HTML, CSS y JavaScript.</p>
     					
-   						<p>Uno de los desafíos fue gestionar los datos del carrito y mantener su estado utilizando localStorage para preservar la información incluso al recargar la página, garantizando una experiencia de usuario continua y sin pérdidas.</p>
+   						<p>Uno de los desafíos fue gestionar los datos del carrito y mantener su estado utilizando localStorage para preservar la información incluso al recargar la página, garantizando una experiencia de usuario continua y sin pérdidas.</p> -->
 						<!-- <div class="flex-center_direccion">
 							<a href="https://celadon-api-6eb941.netlify.app/" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
-						</div> -->
+						</div>
 					</div>
 					
 				</article>
@@ -351,22 +425,18 @@
 						<h2 class="titulo-Proyecto">Consumo de Api Pixabay</h2>
 						<p>En este proyecto, se emplearon tecnologías como HTML, CSS y JavaScript para su implementación.</p>
     					<p>La función principal consiste en buscar imágenes según una palabra clave ingresada por el usuario. Se utilizó JavaScript junto con async/await para realizar llamadas a una API externa y mostrar las imágenes relacionadas con la palabra ingresada, ofreciendo una experiencia dinámica y eficiente para encontrar imágenes deseadas.</p>
-						<!-- <div class="flex-center_direccion">
+						 <div class="flex-center_direccion">
 							<a href="https://carrito-comprasluis.netlify.app" target="_blank" rel="noopener noreferrer" class="boton-proyecto">Ir Al Proyecto</a>
 						</div> -->
-					</div>
+					<!-- </div> -->
 					
-				</article>
-		</section>
-
-		<section class="separador-contenido">
-			<h3>Los datos del formulario seran enviados a mi correo</h3>
+				<!-- </article> -->
 		</section>
 
 		<!--========================= formulario dinamico con javascrip =========================-->
 
 		<section class="seccion-contactos contenedor seccion" id="Contactame">
-			<h1 class="titulo-contactos">Contactame</h1>
+			<h2 class="titulo-contactos">Contactame</h2>
 			<div class="bg-color" >
 				<form class="form-contactos"  id="formulario" action="">
 					<fieldset>

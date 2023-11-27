@@ -9,7 +9,7 @@
 	}
 	
 	.sobremi-img{
-		opacity: 0;
+		opacity: 1;
 		@include telefono{
 		width: 400px;
 		margin-right: 2rem;
@@ -50,7 +50,7 @@
 }
 
 .texto__sobremi{
-	opacity:0;
+	opacity:1;
 	width: 100%;
 	@include telefono{
 		width: 50%;
@@ -264,16 +264,19 @@
 	}
 }
 
-.seccion.animation{
-	.sobremi-img{
-		animation:1.5s imagen ease forwards;
-		overflow-x: hidden;
-	}
-	.texto__sobremi{
-		animation:1.5s animarTexto ease forwards;
-		overflow-x: hidden;
+@include tablet{
+	.seccion.animation{
+		.sobremi-img{
+			animation:1.5s imagen ease forwards;
+			overflow-x: hidden;
+		}
+		.texto__sobremi{
+			animation:1.5s animarTexto ease forwards;
+			overflow-x: hidden;
+		}
 	}
 }
+
 
 
 @keyframes imagen{

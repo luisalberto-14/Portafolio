@@ -5,11 +5,15 @@
 .oscuro{
 	background-color: $grisOscuro;
 	color:$blanco;
-
+	
 	p{
 		color:$blanco;
 	}
-
+	.flex-sobreMi{
+		.sobremi-img{
+			filter:drop-shadow(3px 3px 10px $azul);
+		}
+	}
 	.card-portafolio,.servicio-card{
 		background-color: $gris;
 

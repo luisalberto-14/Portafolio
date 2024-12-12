@@ -11,12 +11,13 @@
 	.sobremi-img{
 		opacity: 1;
 		@include telefono{
-		width: 400px;
+		width: 300px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow-y:hidden;
 		margin-right: 2rem;
+		filter:drop-shadow(5px 5px 10px $gris);
 		img{
 			width: 30rem;
 		}
